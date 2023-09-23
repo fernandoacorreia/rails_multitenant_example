@@ -2,6 +2,8 @@
 
 Based on [Building a Multi-tenant Ruby on Rails App With Subdomains](https://blog.appsignal.com/2020/12/02/building-a-multi-tenant-ruby-on-rails-app-with-subdomains.html)
 
+This example follows the Database-row Level multitenancy pattern.
+
 ## Requirements
 
 Setup development environment: see [fernandoacorreia/macos-rails-setup](https://github.com/fernandoacorreia/macos-rails-setup)
