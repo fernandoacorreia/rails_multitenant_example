@@ -3,6 +3,10 @@ module Tenantable
    
   included do
     scope :for_author, -> (author) { where(tenant_id: author.id) }
+
+    def set_author(slug)
+      self.tenant_id = Author.find_by!(slug: slug).id
+    end
   end
 end
 
