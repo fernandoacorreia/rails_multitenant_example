@@ -14,6 +14,22 @@ This will set up PostgreSQL. Start it with:
 brew services start postgresql@16
 ```
 
+## Host setup
+
+As `sudo` edit `/etc/hosts` and add these entries:
+
+```
+127.0.0.1 one.localhost
+127.0.0.1 two.localhost
+127.0.0.1 three.localhost
+```
+
+To make sure your changes take effect, you should flush the DNS cache. In Terminal, run:
+
+```
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+```
+
 ## Development setup
 
 Create database:
@@ -28,7 +44,15 @@ Start development server:
 bin/rails server
 ```
 
-Open in browser: [http://localhost:3000](http://localhost:3000)
+## Database setup
+
+Using [http://localhost:3000/authors](http://localhost:3000/authors), create 3 authors with slugs `one`, `two` and `three`.
+
+Use these URLs to create articles for each author:
+
+- [http://one.localhost:3000/articles](http://one.localhost:3000/articles)
+- [http://two.localhost:3000/articles](http://two.localhost:3000/articles)
+- [http://three.localhost:3000/articles](http://three.localhost:3000/articles)
 
 ## Outline
 
