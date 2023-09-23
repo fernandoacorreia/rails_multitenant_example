@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  constraints subdomain: /.*/ do
+  constraints(SubdomainConstraint) do
     resources :articles
   end
 
