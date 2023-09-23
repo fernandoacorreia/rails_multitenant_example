@@ -2,6 +2,22 @@
 
 Based on [Building a Multi-tenant Ruby on Rails App With Subdomains](https://blog.appsignal.com/2020/12/02/building-a-multi-tenant-ruby-on-rails-app-with-subdomains.html)
 
+## Development setup
+
+Create database:
+
+```
+bin/rails db:create
+```
+
+Start development server:
+
+```
+bin/rails server
+```
+
+Open in browser: [http://localhost:3000](http://localhost:3000)
+
 ## Outline
 
 This README would normally document whatever steps are necessary to get the
