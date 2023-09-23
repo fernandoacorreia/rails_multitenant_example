@@ -67,4 +67,7 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # Allow subdomains with localhost URLs by setting the top-level domain length to 0.
+  config.action_dispatch.tld_length = 0
 end
